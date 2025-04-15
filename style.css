@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #d8c1ff;
+  background-color: #d9b4ef;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,7 +79,7 @@ section#home {
 }
 
 footer {
-  background-color: #d8c1ff;
+  background-color: #d9b4ef;
   color: #fff;
   text-align: center;
   padding: 10px;
