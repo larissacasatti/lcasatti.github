@@ -1,48 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Budget Shopper</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search - Budget Shopper</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0faff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #d9b4ef;
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    footer {
+      background-color: #d9b4ef;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .search-section {
+      text-align: center;
+      margin: 3rem auto;
+    }
+
+    .search-section input[type="text"] {
+      padding: 0.75rem;
+      width: 60%;
+      max-width: 500px;
+      border: 2px solid #d9b4ef;
+      border-radius: 8px;
+    }
+
+    .search-section button {
+      padding: 0.75rem 1.5rem;
+      background-color: #d9b4ef;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-left: 1rem;
+    }
+
+    .results {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #e0f7fa;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+    }
+
+    .results h3 {
+      margin-top: 0;
+    }
+    .product {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.product img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-info h4 {
+  margin: 0;
+  color: #333;
+}
+
+.product-info p {
+  margin: 0.3rem 0;
+  color: #666;
+}
+  </style>
 </head>
 <body>
   <header>
-    <div class="header-container">
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="search.html">Search</a></li>
-          <li><a href="popular-deals.html">Popular Deals</a></li> <!-- fixed file name -->
-          <li><a href="retailers.html">Retailers</a></li>
-          <li><a href="how-it-runs.html">How It Runs</a></li>
-        </ul>
-      </nav>
-      <img src="images/IMG_0942.jpeg" alt="Budget Shopper Logo" class="logo" />
-    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="#popular-deals">Popular Deals</a></li>
+        <li><a href="#retailers">Retailers</a></li>
+        <li><a href="#how-it-runs">How It Runs</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="home">
-    <h1 class="home-title">Budget Shopper</h1>
-    <div class="start-shopping">
-      <h2>Start Shopping</h2>
-      <div class="product-image">
-        <img src="images/IMG_0944.jpeg" alt="Closet Image" />
-      </div>
-    </div>
+  <section class="search-section">
+    <h1 style="color:#d9b4ef; font-size:2.5rem;">Search Products</h1>
+    <input type="text" placeholder="Enter product name...">
+    <button>Search</button>
+  </section>
 
-    <div class="categories">
-      <button>Tops</button>
-      <button>Dresses</button>
-      <button>Bottoms</button>
-      <button>Beachwear</button>
-      <button>Jewelry</button>
-      <button>Shoes</button>
-    </div>
+  <section class="results">
+    <h3>Example Results</h3>
+    <div class="product">
+  <img src="images/beachwear.webp" alt="Beachwear" />
+  <div class="product-info">
+    <p>$526.00</p>
+    <a href="#">View</a>
+  </div>
+     <div class="product">
+  <img src="images/tops.jpg" alt="Tops" />
+  <div class="product-info">
+    <p>$26.99</p>
+    <a href="#">View</a>
+  </div>
+     <div class="product">
+  <img src="images/dresses.webp" alt="Dress" />
+  <div class="product-info">
+    <p>$550.00</p>
+    <a href="#">View</a>
+  </div>
   </section>
 
   <footer>
-    <!-- You can add footer content here -->
+    <p>&copy; 2025 Budget Shopper</p>
   </footer>
 </body>
 </html>
