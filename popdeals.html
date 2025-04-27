@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popular Deals - Budget Shopper</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #d9b4ef;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .deals-banner {
+      text-align: center;
+      background: url('images/banner-thumbnail.jpg') no-repeat center;
+      background-size: cover;
+      background-color: #d9b4ef; /* fallback color */
+      padding: 100px 20px;
+      color: #00bcd4;
+    }
+
+    .deals-banner h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .deals-table {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 80%;
+    }
+
+    th, td {
+      border: 1px solid #d9b4ef;
+      padding: 12px;
+      text-align: center;
+      color: #333;
+    }
+
+    th {
+      background-color: #e0f7fa;
+      color: #00bcd4;
+    }
+
+    footer {
+      background-color: #d9b4ef;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .footer-links a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+  </style>
+
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="search.html">Search</a></li>
+      <li><a href="popular-deals.html">Popular Deals</a></li>
+      <li><a href="retailers.html">Retailers</a></li>
+      <li><a href="how-it-runs.html">How it Runs</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="deals-banner">
+  <h1>Best Discounts<br>for you!</h1>
+</section>
+
+<section class="deals-table">
+  <table>
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Original Price</th>
+        <th>Discounted Price</th>
+        <th>Retailer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Product A</td>
+        <td>$100</td>
+        <td>$75</td>
+        <td>Amazon</td>
+      </tr>
+      <tr>
+        <td>Product B</td>
+        <td>$50</td>
+        <td>$40</td>
+        <td>Walmart</td>
+      </tr>
+      <tr>
+        <td>Product C</td>
+        <td>$30</td>
+        <td>$20</td>
+        <td>Target</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="contact.html">Contact</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+</footer>
+
+</body>
+</html>
