@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback - Budget Shopper</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+    header {
+      background-color: #d9b4ef;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .feedback-section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .feedback-section h1 {
+      color: #d9b4ef;
+      font-size: 2.5rem;
+    }
+
+    form {
+      margin-top: 20px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #e0f7fa;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #d9b4ef;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 15px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #c099d8;
+    }
+
+    footer {
+      background-color: #d9b4ef;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="search.html">Search</a></li>
+      <li><a href="popular-deals.html">Popular Deals</a></li>
+      <li><a href="retailers.html">Retailers</a></li>
+      <li><a href="how-it-runs.html">How it Runs</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="feedback-section">
+  <h1>Give Us Your Feedback</h1>
+
+  <form action="#" method="post">
+    <input type="text" name="name" placeholder="Your Name (optional)">
+    <input type="email" name="email" placeholder="Your Email (optional)">
+    
+    <select name="feedback-type">
+      <option value="">-- Type of Feedback --</option>
+      <option value="problem">Problem Report</option>
+      <option value="feature">Feature Request</option>
+      <option value="general">General Comment</option>
+    </select>
+
+    <textarea name="message" rows="5" placeholder="Your Feedback..."></textarea>
+    
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="contact.html">Contact</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+</footer>
+
+</body>
+</html>
