@@ -6,13 +6,11 @@ body {
   padding: 0;
 }
 
-header {
-  background-color: #d9b4ef;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
-}
-
+  header {
+      background-color: #d9b4ef;
+      padding: 20px;
+      text-align: center;
+    }
 nav ul {
       list-style: none;
       display: flex;
